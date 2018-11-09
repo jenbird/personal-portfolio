@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+body {
+    font-family: Roboto, serif;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 780px;
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
