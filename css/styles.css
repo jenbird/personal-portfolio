@@ -11,7 +11,7 @@ html {
 body {
     font-family: Roboto, serif;
     /* Margin bottom by footer height */
-    margin: 0 0 150px 0;
+    margin: 0 0 165px 0;
 }
 
 .container-fluid {
@@ -72,16 +72,18 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 150px;
+    height: 165px;
     background-color: #f5f5f5;
   }
 
 .footer-content {
     margin: 20px 10px 10px 10px;
+    align-content: center;
   }
 
   .copyright {
       margin-top: 30px;
+      text-align: center;
   }
 
 

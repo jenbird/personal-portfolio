@@ -13,6 +13,31 @@
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+        
+<!-- Fixed navbar -->
+<nav class="navbar navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Jen Smith</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
 <div class="jumbotron">
 <div class="container-fluid">
@@ -22,9 +47,9 @@
 </div>
 
 <div class="container">
+        <h2>About</h2>
     <div class="row about">
-            <h2>About</h2>
-        <div class="col-md-12">
+        <div class="col-md-6">
             <p>From 100k applicants, down to 6k...I did a Google Developer Scholarship.</p> 
             <p>And passed the Udacity Nanodegree in Front End Web Development in August 2018.</p>
             <p>Now? Getting busy with projects and freelance work. And learning fast.</p>
@@ -32,12 +57,16 @@
             <p>Current side projects: an Agency Ratings app for Sign Language Interpreters,</p>
             <p>in the Winter Cohort of Chinghu working on a project in a team of developers.</p>
         </div> 
+        <div class="col-md-6">
+<p>pic</p>
+        </div>
         </div>
 
+        <a name="portfolio"><h2>Portfolio</h2></a>
     <div class="row portfolio">
-        <h2>Portfolio</h2>
             <div class="col-md-4">
                 <h3>London's Best Sushi</h3>
+                
                 <p>Single page application using React.js, Google Maps and Foursquare APIs to display data to users.</p>
                 <p>Restaurant list and map markers can be filtered using the search box and displayed to user.</p>
             </div>
@@ -53,20 +82,18 @@
             </div>
     </div>    
 </div>
-
 <footer class="footer">
-        <div class="row contact footer-content">
-            <div class="text-center center-block">
-                <a href="https://www.linkedin.com/in/jennifersmithuk"><i id="social-li" class="fa fa-linkedin fa-4x social"></i></a>
-                <a href="https://github.com/jennifersmithuk"><i id="social-gh" class="fa fa-github-square fa-4x social"></i></a>
-                <a href="https://twitter.com/jennifersmithuk"><i id="social-tw" class="fa fa-twitter-square fa-4x social"></i></a>
-                <a href="mailto:info@jensmith.info"><i id="social-em" class="fa fa-envelope-square fa-4x social"></i></a>
-                <p class="copyright"> &copy; Jen Smith 2018</p>
-            </div>
+    <a name="contact"><div class="row contact footer-content justify-content-center"></a>
+        <div class="center-block"></div>
+            <a href="https://www.linkedin.com/in/jennifersmithuk"><i id="social-li" class="fa fa-linkedin fa-4x social"></i></a>
+            <a href="https://github.com/jennifersmithuk"><i id="social-gh" class="fa fa-github-square fa-4x social"></i></a>
+            <a href="https://twitter.com/jennifersmithuk"><i id="social-tw" class="fa fa-twitter-square fa-4x social"></i></a>
+            <a href="mailto:hello@jensmith.info"><i id="social-em" class="fa fa-envelope-square fa-4x social"></i></a>
         </div>
+            <p class="copyright"> &copy; Jen Smith 2018</p>
+        
+    </div>
 </footer>
-
-</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
