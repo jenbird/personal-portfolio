@@ -6,29 +6,143 @@
 html {
     position: relative;
     min-height: 100%;
+    background-color: #f5f5f5;
   }
 
 body {
-    font-family: Roboto, serif;
+    font-family: 'Archivo', sans-serif;
     /* Margin bottom by footer height */
-    margin: 0 0 165px 0;
+    margin: 0 0 180px 0;
+}
+
+.navbar-dark .navbar-brand {
+    color: #1abc9c;
+}
+.nav-link:hover {
+    color: #1abc9c;
 }
 
 .container-fluid {
-    width: 100%;
-    margin: 0 30px;
+    padding: 0;
 }
 
-.jumbotron {
-    
+.jumbotron-content {
+    margin: 40px 0 0 40px;
+}
+
+.about-heading {
+    margin-left: 15px;
 }
 
 .about {
     background-color:  #ffffff;
+    margin: 40px 0;
 }
 
-.portfolio {
-    margin-bottom: 20px;
+/* Portfolio BootSnippet :> */
+.portfolio-section {
+    background: #f5f5f5 !important;
+    padding: 60px 15px;
+    width: 100%;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #1abc9c !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #1abc9c !important;
+}
+
+.frontside .card .card-body img {
+    width: 160px;
+    height: 160px;
+    border-radius: 3%;
+    margin: 10px 0 20px 0;
 }
 
 .social:hover {
@@ -50,8 +164,8 @@ body {
 /*
    Multicoloured Hover Variations
 */
-#social-li, #social-gh, #social-tw, #social-em {
-    color:  #5499c7;
+#social-li, #social-gh, #social-tw, #social-em, #social-lk {
+    color:    #1abc9c;
 }
 
 #social-li:hover {
@@ -66,13 +180,16 @@ body {
 #social-em:hover {
     color: #f39c12;
 }
+#social-lk:hover {
+    color: #e74c3c;
+}
 
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 165px;
+    height: 180px;
     background-color: #f5f5f5;
   }
 

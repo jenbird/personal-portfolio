@@ -10,13 +10,14 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet"> 
 </head>
 <body>
         
 <!-- Fixed navbar -->
 <nav class="navbar navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Jen Smith</a>
+        <a class="navbar-brand" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -40,14 +41,15 @@
       </nav>
 
 <div class="jumbotron">
-<div class="container-fluid">
-    <h1>Jen Smith</h1>
+<div class="container-fluid jumbotron-content">
+    <h1>Jen</h1>
+    <h1>Smith</h1>
     <p>Front End Web Developer, London</p>
 </div>
 </div>
 
-<div class="container">
-        <h2>About</h2>
+<div class="container-fluid">
+        <h2 class="about-heading">About</h2>
     <div class="row about">
         <div class="col-md-6">
             <p>From 100k applicants, down to 6k...I did a Google Developer Scholarship.</p> 
@@ -62,32 +64,119 @@
         </div>
         </div>
 
+    <section class="portfolio-section">
         <a name="portfolio"><h2>Portfolio</h2></a>
-    <div class="row portfolio">
-            <div class="col-md-4">
-                <h3>London's Best Sushi</h3>
-                
-                <p>Single page application using React.js, Google Maps and Foursquare APIs to display data to users.</p>
-                <p>Restaurant list and map markers can be filtered using the search box and displayed to user.</p>
+    <div class="row justify-content-center portfolio">
+            
+         <!-- Project -->
+         <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class="img-fluid" src="img/LondonsBestSushi_300-min.jpg" alt="London's Best Sushi website"></p>
+                                <h4 class="card-title">London's Best Sushi</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">London's Best Sushi</h4>
+                                    <p class="card-text">Single page application using React.js, Google Maps and Foursquare APIs to fetch data.</p>
+                                    <p>Restaurant list and map markers can be filtered using the search box.</p>
+                                    <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" href="https://london-sushi-neighbourhood-map.herokuapp.com/"><i id="social-lk" class="fas fa-link fa-2x social"></i></a>
+                                                <a class="social-icon text-xs-center" href="https://github.com/jennifersmithuk/neighbourhood-map"><i id="social-gh" class="fab fa-github-square fa-2x social"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project --> 
+                <!-- Project-->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class="img-fluid" src="img/MyReads_300-min.jpg" alt="My Reads website"></p>
+                                        <h4 class="card-title">My Reads</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">My Reads</h4>
+                                        <p class="card-text">Single page app using React.js and server to display JSON data via a backend server.</p>
+                                        <p>Books can be added, removed or moved around three shelves.</p>
+                                        <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" href="https://quirky-elion-88f9cb.netlify.com/"><i id="social-lk" class="fas fa-link fa-2x social"></i></a>
+                                                    <a class="social-icon text-xs-center" href="https://github.com/jennifersmithuk/myreads-app"><i id="social-gh" class="fab fa-github-square fa-2x social"></i></a>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Project -->
+                <!-- Project -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class="img-fluid" src="img/RestaurantReviews_300-min.jpg" alt="Restaurant Reviews website"></p>
+                                        <h4 class="card-title">Restaurant Reviews</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Restaurant Reviews</h4>
+                                            <p class="card-text">App with service worker, maps from Mapbox API, images and reviews.</p>
+                                            <p>Fully responsive using CSS Flexbox, media queries and correct image sizing.</p>
+                                            <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                            <a class="social-icon text-xs-center" href="https://jennifersmithuk.github.io/restaurant-reviews/"><i id="social-lk" class="fas fa-link fa-2x social"></i></a>
+                                                        <a class="social-icon text-xs-center" href="https://github.com/jennifersmithuk/restaurant-reviews"><i id="social-gh" class="fab fa-github-square fa-2x social"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h3>My Reads</h3>
-                <p>Single page application using React.js and server to display JSON data via a backend server.</p>
-                <p>Books can be added, removed or moved around three shelves: currently reading, read and want to read.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Restaurant Reviews</h3>
-                <p>App with service worker, maps from Mapbox API, images and reviews.</p>
-                <p>Made fully responsive using CSS styling, Flexbox, media queries and correct image sizing.</p>
-            </div>
-    </div>    
+        </div>
+        </div>
+        </div>
+        <!-- ./Project -->
+    </section>
+    
+        </div>    
 </div>
 <footer class="footer">
     <a name="contact"><div class="row contact footer-content justify-content-center"></a>
         <div class="center-block"></div>
-            <a href="https://www.linkedin.com/in/jennifersmithuk"><i id="social-li" class="fa fa-linkedin fa-4x social"></i></a>
-            <a href="https://github.com/jennifersmithuk"><i id="social-gh" class="fa fa-github-square fa-4x social"></i></a>
-            <a href="https://twitter.com/jennifersmithuk"><i id="social-tw" class="fa fa-twitter-square fa-4x social"></i></a>
+            <a href="https://www.linkedin.com/in/jennifersmithuk"><i id="social-li" class="fab fa-linkedin fa-4x social"></i></a>
+            <a href="https://github.com/jennifersmithuk"><i id="social-gh" class="fab fa-github-square fa-4x social"></i></a>
+            <a href="https://twitter.com/jennifersmithuk"><i id="social-tw" class="fab fa-twitter-square fa-4x social"></i></a>
             <a href="mailto:hello@jensmith.info"><i id="social-em" class="fa fa-envelope-square fa-4x social"></i></a>
         </div>
             <p class="copyright"> &copy; Jen Smith 2018</p>
