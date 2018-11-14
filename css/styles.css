@@ -17,16 +17,24 @@ body {
     background-color: #f5f5f5;
 }
 
+/* Navbar */
+
 .navbar-dark .navbar-brand {
     color: #1abc9c;
 }
 .nav-link:hover {
     color: #1abc9c;
 }
+.navbar-toggler-icon {
+    color: #1abc9c;
+}
+
 
 .container-fluid {
     padding: 0;
 }
+
+/* Jumbotron header and logo */
 
 .jumbotron {
     padding: 20px 25px 20px 25px;
@@ -41,6 +49,8 @@ body {
     margin: 0 0 0 30px;
 }
 
+/* About section */
+
 .row {
     margin: 0;
 }
@@ -51,15 +61,81 @@ body {
     margin-bottom: 30px;
 }
 
-.about-heading {
-    margin-left: 25px;
-}
-
 .about {
     margin: 40px 25px;
 }
 
-/* Portfolio BootSnippet :> */
+/* From bootsnippet https://bootsnipp.com/snippets/qrGeD */
+  
+  .center {
+    fill: #1abc9c;
+  }
+  
+  .pointer {
+    fill: #fff;
+    stroke: #1abc9c;
+    stroke-width: 2;
+  }
+  
+  .nav-copy {
+    font-family: 'Roboto';
+    fill: #fff;
+    fill-opacity: 1;
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  .nav-copy.changing {
+    fill-opacity: 0;
+  }
+  
+  .service {
+    cursor: pointer;
+  }
+  .service text {
+    font-size: 14px;
+    font-family: 'Roboto';
+    text-anchor: middle;
+  }
+  .service .icon-wrapper {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .service .icon-wrapper, .service .icon-wrapper > * {
+    -webkit-transition: all 250ms ease-in;
+    transition: all 250ms ease-in;
+  }
+  .service circle {
+    fill: #1abc9c;
+  }
+  .service circle.shadow {
+    fill-opacity: 0;
+    -webkit-filter: url(#service-shadow);
+            filter: url(#service-shadow);
+  }
+  .service use {
+    fill: #fff;
+  }
+  .service text {
+    fill: #4d4d4d;
+  }
+  .service.active .icon-wrapper, .service:hover .icon-wrapper {
+    -webkit-transform: scale(1.15) translateY(-5px);
+            transform: scale(1.15) translateY(-5px);
+  }
+  .service.active .icon-wrapper, .service.active .icon-wrapper > *, .service:hover .icon-wrapper, .service:hover .icon-wrapper > * {
+    -webkit-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+  }
+  .service.active .icon-wrapper circle.shadow, .service:hover .icon-wrapper circle.shadow {
+    fill-opacity: 0.4;
+  }
+  .service.active text, .service:hover text {
+    fill: #4d4d4d;
+    font-weight: bold;
+  }
+
+/* Portfolio including BootSnippet */
+
 #portfolio-section {
     background: #f5f5f5 !important;
     padding: 40px 25px;
@@ -181,6 +257,25 @@ h2 .portfolio-heading {
     margin: 10px 0 0 0;
 }
 
+/* Footer including hover variations */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+  }
+
+.footer-content {
+    margin: 20px 10px 10px 10px;
+    align-content: center;
+  }
+
+  .copyright {
+      margin-top: 30px;
+      text-align: center;
+  }
+
 .social:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -197,9 +292,6 @@ h2 .portfolio-heading {
     -o-transition-duration: 0.5s;
 }
 
-/*
-   Multicoloured Hover Variations
-*/
 #social-li, #social-gh, #social-tw, #social-em, #social-lk {
     color:    #1abc9c;
 }
@@ -220,24 +312,8 @@ h2 .portfolio-heading {
     color:  #f39c12;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 180px;
-  }
 
-.footer-content {
-    margin: 20px 10px 10px 10px;
-    align-content: center;
-  }
-
-  .copyright {
-      margin-top: 30px;
-      text-align: center;
-  }
-
+/* Media queries */
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
