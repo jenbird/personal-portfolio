@@ -25,10 +25,15 @@ body {
 .nav-link:hover {
     color: #1abc9c;
 }
-.navbar-toggler-icon {
+
+a {
     color: #1abc9c;
 }
 
+a:hover {
+    color: #1abc9c;
+    text-decoration-line: underline;
+}
 
 .container-fluid {
     padding: 0;
@@ -142,6 +147,9 @@ body {
     font-family: FontAwesome;
  }
  
+ h2 {
+     padding-bottom: 30px !important;
+ }
 
 /* Portfolio including BootSnippet */
 

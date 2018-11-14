@@ -11,7 +11,7 @@ var tspan_delta = 16;
 
 //name is used as the title for the bubble
 //icon is the id of the corresponding svg symbol
-var services_data = [{ name: "About", icon: "information" }, { name: "History", icon: "history" }, { name: "Google", icon: "google" }, { name: "Udacity", icon: "study" }, { name: "interests", icon: "hashtag" }, { name: "Open Source", icon: "code" }, { name: "Projects", icon: "projects" }];
+var services_data = [{ name: "About", icon: "information" }, { name: "History", icon: "history" }, { name: "Google", icon: "google" }, { name: "Udacity", icon: "study" }, { name: "Interests", icon: "hashtag" }, { name: "Open Source", icon: "code" }, { name: "Projects", icon: "projects" }];
 
 var services = document.getElementById("service-collection");
 var nav_container = document.getElementById("circle-nav-services");
