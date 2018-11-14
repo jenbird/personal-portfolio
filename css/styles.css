@@ -26,8 +26,16 @@ body {
     padding: 0;
 }
 
+.jumbotron {
+    padding: 40px 30px 10px 30px;
+}
+
 .jumbotron-content {
     margin: 40px 0 0 40px;
+}
+
+.logo-strapline {
+    margin: 0 0 0 30px;
 }
 
 .row {
