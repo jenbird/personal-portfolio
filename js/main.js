@@ -1,5 +1,6 @@
 "use strict";
 
+// About section with https://bootsnipp.com/snippets/qrGeD 
 var center = { x: 325, y: 175 };
 var serv_dist = 250;
 var pointer_dist = 172;
@@ -191,3 +192,5 @@ createPointer();
 setTimeout(function () {
   return jQuery("#service-collection .serv-0").addClass("active");
 }, 200);
+
+
