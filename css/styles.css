@@ -287,9 +287,6 @@ h2 .portfolio-heading {
 }
 
 
-
-
-
 /* Footer including hover variations */
 
 .footer {
@@ -297,16 +294,19 @@ h2 .portfolio-heading {
     bottom: 0;
     width: 100%;
     height: 180px;
+    background-color: #343a40;
   }
 
 .footer-content {
-    margin: 20px 10px 10px 10px;
+    margin: 25px 10px 30px 10px;
     align-content: center;
   }
 
-  .copyright {
-      margin-top: 30px;
+  .copyright {  
+      padding-bottom: 10px;
       text-align: center;
+      background-color: #343a40;
+      color: rgba(255,255,255,.5);
   }
 
 .social:hover {
@@ -333,7 +333,7 @@ h2 .portfolio-heading {
     color: #0073b1;
 }
 #social-gh:hover {
-    color: #24292e;
+    color: rgba(255,255,255,.5);
 }
 #social-tw:hover {
     color: #4099FF;
