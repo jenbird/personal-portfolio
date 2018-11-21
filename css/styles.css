@@ -359,7 +359,6 @@ h2 .portfolio-heading {
     margin-top: 10px;
 }
 
-
 .frontside .card .card-body img {
     width: 185px;
     height: 160px;
@@ -406,7 +405,7 @@ h2 .portfolio-heading {
     -o-transition-duration: 0.5s;
 }
 
-#social-li, #social-gh, #social-tw, #social-em, #social-lk {
+#social-li, #social-gh, #social-tw, #social-em, #social-lk, #social-gh-footer {
     color:    #1abc9c;
 }
 
@@ -414,7 +413,7 @@ h2 .portfolio-heading {
     color: #0073b1;
 }
 #social-gh:hover {
-    color: rgba(255,255,255,.5);
+    color:#24292e;
 }
 #social-tw:hover {
     color: #4099FF;
@@ -424,6 +423,9 @@ h2 .portfolio-heading {
 }
 #social-lk:hover {
     color:  #f39c12;
+}
+#social-gh-footer:hover {
+    color: rgba(255,255,255,.5);
 }
 
 
