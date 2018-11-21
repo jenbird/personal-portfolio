@@ -78,8 +78,8 @@ h2 .about-heading {
 
 /* From bootsnippet https://bootsnipp.com/snippets/qrGeD */
   
-.circle-nav-services {
-    max-width: 70%;
+#circle-nav-services {
+    max-width: 650px;
 }
 
   .center {
