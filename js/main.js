@@ -193,3 +193,6 @@ setTimeout(function () {
   return jQuery("#service-collection .serv-0").addClass("active");
 }, 200);
 
+$('.nav-link').on('click',function() {
+    $('.navbar-collapse').collapse('hide');
+  });

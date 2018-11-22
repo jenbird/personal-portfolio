@@ -31,8 +31,12 @@ body {
     color: rgba(255,255,255,.75);
 }
 
+.nav-link {
+    padding-left: 0;
+}
+
 .nav-link:hover {
-    color: #1abc9c;
+    color: #1abc9c !important;
 }
 
 a {
@@ -376,3 +380,14 @@ h2 .portfolio-heading {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+
+// Under 575px 
+@media (max-width: 575px) {
+    #circle-nav-copy .cls-5 {
+        font-size: 28px;
+    }
+    .card {
+        max-height: 350px;
+        max-width: 200px;
+    }
+}
