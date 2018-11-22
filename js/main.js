@@ -193,4 +193,3 @@ setTimeout(function () {
   return jQuery("#service-collection .serv-0").addClass("active");
 }, 200);
 
-
