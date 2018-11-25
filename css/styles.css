@@ -322,15 +322,25 @@ h2 .portfolio-heading {
     margin-left: 25px;
 }
 
-.btn {
-    background: #1abc9c;
-    color: #2c3e50;
+.btn-success.disabled, .btn-success:disabled {
+    background: #008969;
+    border-color: #008969;
 }
 
-.btn:hover {
-    background: #01A383;
-    color: #2c3e50;
+.btn-success {
+    background: #1abc9c;
 }
+
+
+.btn-success:hover {
+    background: #01A383;
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
+
 
 /* Footer including hover variations */
 

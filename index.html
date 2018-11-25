@@ -555,9 +555,15 @@
     <section id="contact-section">
         <h2 class="contact-heading">Contact</h2>
                  
-                    <form id="contact-form" method="post" action="contact.php" role="form">
+                    <form id="contact-form" method="post" role="form" novalidate="true">
 
+                            <div class="row">
+                                    <div class="col-xs-12 col-sm-2 col-md-2">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8">
                             <div class="messages"></div>
+                                    </div>
+                            </div>
                         
                             <div class="controls">
                         
@@ -578,7 +584,6 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="row">
                                         <div class="col-12 col-sm-2 col-md-2">
@@ -614,11 +619,8 @@
                                             <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
-                                        <div class="form-group">
-                                                <div class="g-recaptcha" data-sitekey="SITE_KEY" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                                                <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-                                                <div class="help-block with-errors"></div>
-                                            </div>
+                                        
+                       
                                     </div>
                                 </div>
                                 <div class="row">
@@ -636,7 +638,7 @@
                                         <p><strong>*</strong> These fields are required.</p>
                                     </div>
                                 </div>
-                                              
+                                   </div>           
                         </form>
     </section> 
 
@@ -657,12 +659,12 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<script src="contact.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/validator.js"></script>
+<script src="js/contact.js"></script>
 </body>
 </html> 
