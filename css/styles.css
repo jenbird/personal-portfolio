@@ -18,8 +18,11 @@ body {
 	/* Margin bottom by footer height */
 	margin: 0 0 180px 0;
 	padding-top: 56px;
-	background-color: #f8f8f8;
+    background-color: #f8f8f8;
+ 
 }
+
+
 
 
 /* Navbar */
