@@ -25,7 +25,7 @@ body {
 /* Navbar */
 
 .navbar {
-    padding-left: 50px;
+    padding-left: 34px;
 }
 
 .navbar-dark .navbar-brand {
@@ -36,12 +36,12 @@ body {
     color: rgba(255, 255, 255, .75);
 }
 
-.nav-link {
+a .nav-link {
 	padding-left: 0;
 }
 
-.nav-link:hover {
-	color: #1abc9c !important;
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #1abc9c;
 }
 
 a {
@@ -53,6 +53,9 @@ a:hover {
 	text-decoration-line: underline;
 }
 
+.screen-reader-text {
+    font-size: 0;
+}
 
 /* Main content container */
 
@@ -88,10 +91,6 @@ a:hover {
 
 .about-heading {
 	margin-left: 50px;
-}
-
-h2 .about-heading {
-	padding-bottom: 10px !important;
 }
 
 .about {
@@ -196,20 +195,20 @@ svg text {
 }
 
 h2 {
-	padding-bottom: 30px !important;
+	padding-bottom: 30px;
 }
 
 
 /* Skills Section */
 
 #skills-section {
-	padding-top: 40px;
-	margin-top: -40px;
+	padding-top: 80px;
+	margin-top: -80px;
 	padding-bottom: 20px;
 }
 
 .skills-heading {
-    padding: 40px 50px;
+    padding-left: 50px;
 }
 
 .skills-chart {
@@ -226,6 +225,10 @@ h2 {
 	margin: 0 50px 30px 50px;
 }
 
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* Skill charts */
 
@@ -313,10 +316,6 @@ h2 {
     width: 100%;
 }
 
-h2 .portfolio-heading {
-	margin: 20px 50px 0 0;
-}
-
 .card {
 	min-height: 470px;
 	min-width: 235px;
@@ -336,11 +335,11 @@ h2 .portfolio-heading {
 
 .card a {
 	font-size: 16px;
-	color: #1abc9c !important;
+	color: #1abc9c;
 }
 
 .card .card-title {
-	color: #2c3e50 !important;
+	color: #2c3e50;
 }
 
 .card .card-body img {
@@ -383,8 +382,8 @@ h2 .portfolio-heading {
 }
 
 .btn-success:hover .btn-success:active {
-    background: #01A383 !important;
-    border-color: #01A383 !important;
+    background: #01A383;
+    border-color: #01A383;
 }
 
 .help-block.with-errors {
@@ -494,5 +493,7 @@ h2 .portfolio-heading {
 		max-width: 200px;
     }
     */
-    
+    #portfolio-section {
+        padding: 60px 30px;
+    }
 }
