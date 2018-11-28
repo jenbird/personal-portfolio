@@ -25,7 +25,7 @@ body {
 /* Navbar */
 
 .navbar {
-    padding-left: 60px;
+    padding-left: 50px;
 }
 
 .navbar-dark .navbar-brand {
@@ -64,7 +64,7 @@ a:hover {
 /* Jumbotron header and logo */
 
 .jumbotron {
-	padding: 5px 25px 5px 25px;
+	padding: 5px 15px 5px 20px;
 	background-color: #2c3e50;
 	border-radius: 0;
 }
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .about-heading {
-	margin-left: 60px;
+	margin-left: 50px;
 }
 
 h2 .about-heading {
@@ -209,7 +209,7 @@ h2 {
 }
 
 .skills-heading {
-    padding: 40px 60px;
+    padding: 40px 50px;
 }
 
 .skills-chart {
@@ -314,7 +314,7 @@ h2 {
 }
 
 h2 .portfolio-heading {
-	margin: 20px 60px 0 0;
+	margin: 20px 50px 0 0;
 }
 
 .card {
@@ -365,7 +365,7 @@ h2 .portfolio-heading {
 }
 
 .contact-heading {
-	margin-left: 60px;
+	margin-left: 50px;
 }
 
 .btn {
@@ -383,7 +383,8 @@ h2 .portfolio-heading {
 }
 
 .btn-success:hover .btn-success:active {
-	background: #01A383;
+    background: #01A383 !important;
+    border-color: #01A383 !important;
 }
 
 .help-block.with-errors {
@@ -487,12 +488,11 @@ h2 .portfolio-heading {
 }
 
 // Under 575px 
-@media (max-width: 575px) {
-	#circle-nav-copy .cls-5 {
-		font-size: 28px;
-	}
-	.card {
+@media screen and (max-width: 575px) {
+	/*.card {
 		max-height: 350px;
 		max-width: 200px;
-	}
+    }
+    */
+    
 }
