@@ -48,33 +48,30 @@
             </ul>
          </div>
       </nav>
-      <section class="jumbotron">
+      <section class="jumbotron container-fluid jumbotron-content d-flex justify-content-center">
             <h1 class="screen-reader-text">Jen Smith Front End Web Developer</h1>
-         <div class="container-fluid jumbotron-content d-flex justify-content-center">
             <svg role="img" viewBox="7 10.547 448.609 98.74" width="375" height="98.74" tabindex="0" aria-labelledby="SVG-logo-title SVG-logo-desc">
                 <title id="SVG-logo-title">Logo for Jen Smith Front End Web Developer</title>
                 <desc id="SVG-logo-desc">Logo text says Jen Smith Front End Web Developer</desc>
                <text style="white-space: normal;">
-                  <tspan style="fill: rgb(26, 188, 156); font-family: 'Archivo'; font-size: 44px; font-weight: 600;" x="7" y="49.25">Jen</tspan>
+                  <tspan style="fill: rgb(26, 188, 156); font-family: 'Archivo'; font-size: 42px; font-weight: 600;" x="7" y="49.25">Jen</tspan>
                </text>
                <text style="white-space: normal;">
                   <tspan x="150.277" y="72.125">
                   </tspan>
-                  <tspan style="fill: rgb(248,248,248); font-family: 'Archivo'; font-size: 44px; font-weight: 600;" x="18.5" y="91.5">Smith</tspan>
+                  <tspan style="fill: rgb(248,248,248); font-family: 'Archivo'; font-size: 42px; font-weight: 600;" x="18.5" y="91.5">Smith</tspan>
                </text>
                <text style="fill: rgb(26, 188, 156); font-family: 'Archivo'; white-space: pre;">
-                  <tspan style="font-size: 23px; font-weight: 600;" x="165" y="91">Front End</tspan>
+                  <tspan style="font-size: 23px; font-weight: 600;" x="160" y="91">Front End</tspan>
                </text>
-               <text style="fill: rgb(248,248,248); font-family: 'Archivo'; font-size: 23px; font-weight: 600; white-space: pre;" x="280" y="91">Web Developer</text>
+               <text style="fill: rgb(248,248,248); font-family: 'Archivo'; font-size: 23px; font-weight: 600; white-space: pre;" x="275" y="91">Web Developer</text>
             </svg>
-
-         </div>
       </section>
       <!-- About section with https://bootsnipp.com/snippets/qrGeD -->
-      <div class="container-fluid">
          <section id="about-section">
-            <h2 class="about-heading">About</h2>
+                <h2 class="about-heading">About</h2>
             <div class="container d-flex justify-content-center">
+            
                <svg id="circle-nav-services" width="100%" height="100%" viewBox="0 0 650 550" role="group" aria-labelledby="SVG-about SVG-about-desc">
                     <title id="SVG-about">About graphic</title>
                     <desc id="SVG-about-desc">An interactive about graphic with links to info</desc>
@@ -281,12 +278,12 @@
                   </g>
                   <circle cx="325" cy="170" r="140" class="center"/>
                   <use x="185" y="30" width="280" height="280" xlink:href="#circle-nav-copy" class="nav-copy"/>
-               </svg>
+                </svg>
             </div>
          </section>
          <section id="skills-section">
             <h2 class="skills-heading">Skills</h2>
-            <div class="skills-chart">
+            <div class="container-fluid skills-chart">
                <div class="row skills-row">
                   <div class="col-12 col-sm-4 col-md-4">
                      <br>
@@ -444,10 +441,11 @@
          </section>
          <!-- Portfolio section -->
          <section id="portfolio-section">
-            <h2 class="portfolio-heading">Portfolio</h2>
+                <h2 class="portfolio-heading">Portfolio</h2>
+             <div class="container-fluid mt-4">
             <div class="row d-flex justify-content-center portfolio">
                <!-- Project -->
-               <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="col-auto mb-3">
                   <div class="card">
                      <div class="card-body text-center">
                         <p><img src="img/LondonsBestSushi_300-min.jpg" alt="London's Best Sushi website"></p>
@@ -465,7 +463,7 @@
                </div>
                <!-- ./Project --> 
                <!-- Project-->
-               <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="col-auto mb-3">
                   <div class="card">
                      <div class="card-body text-center">
                         <p><img src="img/MyReads_300-min.jpg" alt="My Reads website"></p>
@@ -483,7 +481,7 @@
                </div>
                <!-- ./Project -->
                <!-- Project -->
-               <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="col-auto mb-3">
                   <div class="card">
                      <div class="card-body text-center">
                         <p><img src="img/RestaurantReviews_300-min.jpg" alt="Restaurant Reviews website"></p>
@@ -501,9 +499,11 @@
                </div>
             </div>
             <!-- ./Project -->
+        </div>
          </section>
          <section id="contact-section">
             <h2 class="contact-heading">Contact</h2>
+            <div class="container-fluid">
             <form id="contact-form" method="post" role="form" novalidate="true">
                <div class="row">
                   <div class="col-xs-12 col-sm-2 col-md-2">
@@ -577,23 +577,23 @@
                      </div>
                   </div>
                   </div>
-               </div>
             </form>
+        </div>
          </section>
-      </div>
       <footer class="footer">
          <div class="row contact footer-content justify-content-center">
-            <div class="center-block"></div>
+            <div>
             <a href="https://www.linkedin.com/in/jennifersmithuk" title="Jen Smith's LinkedIn Profile"><i id="social-li" class="fab fa-linkedin fa-4x social"></i></a>
             <a href="https://github.com/jennifersmithuk" title="Jen Smith's GitHub Profile"><i id="social-gh-footer" class="fab fa-github-square fa-4x social"></i></a>
             <a href="https://twitter.com/jennifersmithuk" title="Jen Smith's Twitter Feed"><i id="social-tw" class="fab fa-twitter-square fa-4x social"></i></a>
             <a href="mailto:hello@jensmith.info" title="Send Jen Smith an Email"><i id="social-em" class="fa fa-envelope-square fa-4x social"></i></a>
          </div>
+        </div>
          <div class="copyright">
             <p> &copy; Jen Smith 2018 </p>
             <p>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" rel="noopener" title="Dave Gandy">Dave Gandy</a>, <a href="https://www.flaticon.com/authors/ddara" rel="noopener" title="dDara">dDara</a>, <a href="https://www.flaticon.com/authors/good-ware" rel="noopener" title="Good Ware">Good Ware</a> and <a href="https://www.freepik.com" rel="noopener" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" rel="noopener" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" rel="noopener" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
          </div>
-         </div>
+         
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

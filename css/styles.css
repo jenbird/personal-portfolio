@@ -24,20 +24,17 @@ body {
 
 /* Navbar */
 
-.navbar {
-    padding-left: 34px;
+.navbar-nav {
+    padding-left: 26px;
 }
 
 .navbar-dark .navbar-brand {
-	color: #1abc9c;
+    color: #1abc9c;
+    padding-left: 26px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .75);
-}
-
-a .nav-link {
-	padding-left: 0;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -90,13 +87,8 @@ a:hover {
 }
 
 .about-heading {
-	margin-left: 50px;
+	margin-left: 42px;
 }
-
-.about {
-	margin: 40px 25px;
-}
-
 
 /* From bootsnippet https://bootsnipp.com/snippets/qrGeD */
 
@@ -208,7 +200,7 @@ h2 {
 }
 
 .skills-heading {
-    padding-left: 50px;
+    padding-left: 42px;
 }
 
 .skills-chart {
@@ -236,7 +228,7 @@ h3 {
 	position: relative;
 	border-radius: 50%;
 	overflow: hidden;
-	margin: auto;
+    margin: auto;
 }
 
 .donut-chart .slice {
@@ -260,7 +252,8 @@ h3 {
 .donut-chart.chart {
 	width: 80px;
 	height: 80px;
-	background: #fff;
+    background: #fff;
+    margin-top: 10px;
 	margin-bottom: 10px;
 }
 
@@ -310,15 +303,19 @@ h3 {
 /* Portfolio including BootSnippet */
 
 #portfolio-section {
-	padding: 60px 50px;
+	padding: 60px 0;
 	padding-top: 80px;
     margin-top: -80px;
     width: 100%;
 }
 
+.portfolio-heading {
+    padding-left: 42px;
+}
+
 .card {
-	min-height: 470px;
-	min-width: 235px;
+	height: 400px;
+	width: 320px;
 	position: relative;
 	border: none;
 	background: #ffffff;
@@ -354,7 +351,8 @@ h3 {
 
 #contact-section {
 	padding-top: 80px;
-	margin-top: -80px;
+    margin-top: -80px;
+    width: 100%;
 }
 
 #contact-form {
@@ -364,7 +362,7 @@ h3 {
 }
 
 .contact-heading {
-	margin-left: 50px;
+	margin-left: 42px;
 }
 
 .btn {
@@ -403,8 +401,8 @@ h3 {
 }
 
 .footer-content {
-	margin: 25px 10px 30px 10px;
-	align-content: center;
+	margin: 25px 10px 20px 10px;
+	
 }
 
 .copyright {
@@ -482,18 +480,10 @@ h3 {
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-	...
+@media (min-width: 1200px) { 
+    .skills-row {
+        margin: 0 100px 30px 50px;
+    }
 }
 
-// Under 575px 
-@media screen and (max-width: 575px) {
-	/*.card {
-		max-height: 350px;
-		max-width: 200px;
-    }
-    */
-    #portfolio-section {
-        padding: 60px 30px;
-    }
-}
+
