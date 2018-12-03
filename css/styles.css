@@ -33,13 +33,30 @@ body {
     padding-left: 26px;
 }
 
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+	color:#fff;
+}
+
+.navbar-dark .navbar-brand:active {
+	color: #1abc9c;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .75);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+	color: #1abc9c;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
 	color: #1abc9c;
 }
+
+.navbar-dark .navbar-nav .nav-link:active {
+	color: #1abc9c;
+}
+
 
 a {
 	color: #1abc9c;
@@ -371,17 +388,31 @@ h3 {
 
 .btn-success.disabled,
 .btn-success:disabled {
+	color: #2c3e50;
 	background: #008969;
 	border-color: #008969;
 }
 
 .btn-success {
+	color: #2c3e50;
 	background: #1abc9c;
+	border-color: #1abc9c;
 }
 
-.btn-success:hover .btn-success:active {
+.btn-success:hover {
+	color: #2c3e50;
     background: #01A383;
     border-color: #01A383;
+}
+
+.btn-success.focus,.btn-success:focus {
+	box-shadow: 0 0 0 .2rem #01A383;
+}
+
+.btn-success:not(:disabled):not(.disabled):active {
+	color: #2c3e50;
+	background-color: #01A383;
+	border-color: #01A383;
 }
 
 .help-block.with-errors {
@@ -413,15 +444,22 @@ h6 {
 
 .btn-secondary:hover {
 	color: #2c3e50;
+	
 	background-color: #01A383;
 	border-color: #01A383;
 }
 
-.btn-secondary:active {
+.btn-secondary:focus {
+	box-shadow:0 0 0 .2rem #01A383;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,.btn-secondary:not(:disabled):not(.disabled):active:focus {
 	color: #2c3e50;
 	background-color: #01A383;
 	border-color: #01A383;
+	box-shadow:0 0 0 .2rem #01A383;
 }
+
 
 /* Footer including hover variations */
 
